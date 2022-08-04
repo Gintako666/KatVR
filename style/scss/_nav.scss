@@ -1,0 +1,150 @@
+html {
+    scroll-behavior: smooth;
+    }
+.containerNav{
+    padding: 108px  0 0 0;
+}
+.nav{
+
+    transform: translateY(-100%);
+    display: none;
+    // transform: translateY(-100%);
+    position: fixed;
+    width: 100vw;
+    height: 568px;
+    background: #191536;
+    z-index: 11;
+    // display: none;
+    transition: .3s;
+    &__content{
+        display: flex;
+        flex-direction: column;
+        &__item{
+            padding: 11px 0 11px 155px;
+            font-size: 21px;
+            line-height: 27.3px;
+            color:#fff;
+            transition: .15s;
+        }
+        &__item:hover{
+            background: #110E25;
+            color: #05C2DF;
+        }
+        &__close{
+            position: absolute;
+            top: 34px;
+            right: 34px;
+            &__line{
+                transition: .3s;
+                
+            }
+        }
+        &__close:hover{
+            .nav__close .nav__content__close__line{
+                stroke:#05C2DF ;
+                box-shadow: 5px 0px 0px #05C2DF;
+            }
+            
+        }  
+            
+        
+    }
+}
+
+.video{
+opacity: 0;
+z-index: 18;
+transform: .3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0 ,0.5);
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &Container{
+        width:68%;
+         height:auto;
+        position: relative;
+        &__close{
+            position: absolute;
+            right: 13px;
+            top: 15px;
+        }
+    }
+    transition: .3s;
+    
+}
+.vid{
+    width: 100%;
+    height: auto;
+}
+.videoAnim{
+    opacity: 1;
+}
+
+
+.navHelp{
+    transition: .3s;
+    transform: translateY(-100%);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #191536;
+    z-index: 16;
+
+    &__title{
+        font-size: 36px;
+        color: #fff;
+        font-weight: 400;
+        text-align: center;
+        padding: 68px 0 30px 0;
+    }
+
+    &__text{
+        color: #929292;
+        font-size: 16px;
+line-height: 150%;
+        p{
+            padding:  0 0 30px 0;
+        }
+        a{
+            color: #05C2DF;
+        }
+    }
+
+    &__links{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        
+        font-size: 16px;
+        line-height: 150%;
+        padding: 0 0 30px 0;
+    }
+    &__link{
+        color: #05C2DF;
+    }
+
+    &__mails{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        font-size: 16px;
+        line-height: 150%;
+
+    }
+    &__mail{
+        color: #929292;
+    }
+    &__close{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}

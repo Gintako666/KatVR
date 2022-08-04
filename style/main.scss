@@ -1,0 +1,48 @@
+
+
+@import "scss/_mixins";
+
+@import "scss/_header";
+@import "scss/_nav";
+@import "scss/_navLeng";
+@import "scss/_video";
+@import "scss/_more";
+@import "scss/_about";
+@import "scss/_tech.scss";
+@import "scss/_why";
+@import "scss/_getIn";
+@import "scss/_footer";
+@import "scss/_media";
+@import "scss/_slider";
+
+body::-webkit-scrollbar{
+    width: 7px;
+}
+body::-webkit-scrollbar-track{
+    background: #05040B;
+}
+body::-webkit-scrollbar-thumb{
+    background: #05C2DF;
+    border-radius: 5px;
+    
+}
+
+// @import url("/style/main.css.map");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.container{
+    max-width: 1980px;
+    margin: 0 auto;
+    padding: 0 233px 0 234px;
+    
+}
+
+a{
+    text-decoration: none;
+}

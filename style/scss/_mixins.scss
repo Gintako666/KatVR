@@ -1,0 +1,46 @@
+@mixin techTitle{
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+
+    padding: 0 0 21px 0;
+    
+}
+@mixin techText{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    
+    color: #929292;
+    transition: .1s;
+}
+
+@mixin techContent__768__item{
+    z-index: 1;
+    position: absolute;
+    
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: #05C2DF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin techItemContent {
+    z-index: -1;
+    box-sizing:content-box;
+    border-radius: 10px;
+    padding: 15px;
+    width:0px;
+    background: #191536;
+    position: absolute;
+
+    transition: .4s;
+    opacity: 0;
+    
+    // overflow: hidden;
+}
+

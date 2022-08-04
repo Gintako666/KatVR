@@ -1,0 +1,125 @@
+.aboutBG {
+  background: linear-gradient(107.56deg, #191536 0%, #000000 100%);
+}
+
+.about {
+  padding: 147px 0 158px 0;
+}
+.about__top {
+  display: flex;
+  padding: 0 0 0 232px;
+}
+.about__top__number {
+  color: #05C2DF;
+  padding-right: 23px;
+  padding-left: 2px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.about__top__video {
+  max-width: 622px;
+  height: 290px;
+}
+.about__top__video__right {
+  padding-top: 12px;
+  max-width: 207px;
+  position: relative;
+  display: flex;
+  gap: 103px;
+}
+.about__top__video__right__link {
+  color: #fff;
+  cursor: pointer;
+}
+.about__top__video__right__switch {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: #212121;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+}
+.about__top__video__right__switch__item {
+  position: absolute;
+  left: 0;
+  display: block;
+  height: 1px;
+  width: 65px;
+  background: #05C2DF;
+  transition: 0.4s;
+}
+.about__top__video__right__switch .active {
+  left: 168px;
+  width: 37px;
+}
+.about__top__body {
+  padding: 0 0 0 120px;
+}
+.about__top__body__title {
+  font-size: 36px;
+  line-height: 44px;
+  color: #fff;
+  font-weight: 900;
+  padding: 0 0 60px 0;
+}
+.about__top__body__title a {
+  color: #05C2DF;
+  font-weight: 400;
+}
+.about__top__body__text {
+  color: #929292;
+  font-size: 16px;
+  line-height: 150%;
+  max-width: 435px;
+  padding: 0 0 32px 0;
+}
+.about__top__body__button {
+  position: relative;
+}
+.about__top__body__button__text {
+  position: absolute;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  top: 50%;
+  left: 100px;
+  transform: translate(0, -50%);
+  color: #FFFFFF;
+}
+
+.aboutTopItem1, .aboutTopItem2, .aboutTopItem3, .aboutTopItem4, .aboutTopItem5 {
+  display: none;
+  opacity: 0;
+}
+
+.swipeSwitchItem {
+  left: 80%;
+  width: 40px;
+}
+
+.ItemsActive {
+  display: flex;
+  opacity: 1;
+}
+
+.aboutVideo {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videoContainer {
+  width: 68%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=about.css.map */

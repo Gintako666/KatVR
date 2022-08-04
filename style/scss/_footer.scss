@@ -1,0 +1,40 @@
+.footer{
+    align-items:center;
+    padding: 43px 0;
+    display: flex;
+    justify-content: space-between;
+    &__center{
+        align-items:center;
+        display: flex;
+        gap: 40px;
+        &__link{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+
+
+            color: #F2F2F2;
+        }
+    }
+    &__right{
+        align-items: center;
+        display: flex;
+        gap: 30px;
+    }
+    &__links320{
+        
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        grid-column: 2/3;
+            grid-row: 3/4;
+        &__link{
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+        
+            color: #929292;
+        }
+        display: none;
+    }
+}

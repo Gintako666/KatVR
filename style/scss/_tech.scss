@@ -1,0 +1,239 @@
+.tech__content__768__itemSensorClick1{
+    transition: .3s;
+}
+.none{
+    opacity: 0;
+}
+.techBg{
+    background: #05040B;
+}
+
+.tech{
+    padding: 160px 85px 175px 192px;
+    
+    
+    &__title{
+        padding: 0 140px 80px 0;
+        text-align: end;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 44px;
+        color: #FFFFFF;
+
+        a{
+            font-weight: 400;
+            color: #05C2DF;
+        }
+    }
+
+    &__content{
+        display: grid;
+        grid-template-columns: 250px 110px 150px 150px 135px 376px;
+        grid-template-rows: 69px 138px 133px ;
+        justify-content: center;
+        &__conectionn__title, &__batterries__title, &__sensor__title{
+            @include techTitle;
+        }
+        &__conectionn__text, &__batterries__text, &__sensor__text{
+            @include techText;
+        }
+        
+        &__sensor{
+            grid-column: 1 / 2;
+            grid-row: 1/2;
+            position: relative;
+            &__arrow{
+                position: absolute;
+                top: 6px;
+                right: -273px;
+            }
+        }
+        &__conectionn{
+            padding: 9px 0 0 0;
+            grid-column: 1 / 2;
+            grid-row: 3/4;
+            position: relative;
+            &__arrow{
+                position: absolute;
+                top: -89px;
+                right: -128px;
+            }
+            &__arrow1280{
+                display: none;
+                position: absolute;
+                top: -89px;
+                right: -128px;
+            }
+        }
+        &__batterries{
+            padding:  0 0 0 36px;
+            grid-column: -1/-2;
+            grid-row: 1/2;
+            position: relative;
+            &__arrow{
+                position: absolute;
+                top: 5px;
+                left: -260px;
+            }
+        }
+        &__img{
+            user-select:none;
+            z-index: 10;
+            grid-column: 3/5;
+            grid-row: -2/-3;
+        }
+
+        &__768{
+            user-select:none;
+            display: none;
+            position: relative;
+            &__item{
+                &SVG{
+                    position: absolute;
+                    
+                }
+                &__sensor__title, &conectionn__conectionn__title, &Batterries__Batterries__title{
+                    @include techTitle;
+                    
+                }
+                &__sensor__text, &conectionn__conectionn__text, &Batterries__Batterries__text{
+                    @include techText;
+                }
+
+                
+            }
+            .itemActive{
+                background: #07798B;
+                border: 4px solid rgba(255, 255, 255, 0.14)
+            }
+            &__itemSensor{
+
+                @include techContent__768__item;
+
+                top: -7.5%;
+                left: 17.9%;
+                
+                &__sensor{
+                    @include techItemContent;
+                    top: -50%;
+                    left: 110%;
+
+                    &__arrow{
+                        z-index: 10;
+                        
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translate(-71%, -50%) rotate(-90deg);
+                    }
+
+                    max-height: 130px;
+                    
+                }
+                &__sensor__title{
+                    @include techTitle;
+                    padding: 0 0 10px 0;
+                }
+                &__sensor__text{
+                    text-overflow:clip;
+                    position: relative;
+                    width:300px;
+                    opacity: 0;
+                    z-index: -1;
+                    @include techText;
+
+                }
+            }
+
+        
+            &__itemconectionn{
+                @include techContent__768__item;
+                position: absolute;
+                bottom: 5.3%;
+                left: -16.2%;
+                &__conectionn{
+                    @include techItemContent;
+                    top: -50%;
+                    left: 85px;
+
+                    &__title{
+                        @include techTitle;
+                        padding: 0 0 10px 0;
+                    }
+                    &__text{
+                        text-overflow:clip;
+                        position: relative;
+                        width:300px;
+                        opacity: 0;
+                        z-index: -1;
+                        @include techText;
+                    }
+                }
+            }
+
+            &__itemBatterries{
+                @include techContent__768__item;
+                position: absolute;
+                bottom: 41.1%;
+                right: 13.7%;
+                &__Batterries{
+                    @include techItemContent;
+                    max-width: 0px;
+                    top: -50%;
+                    right: 85px;
+                    width: auto;
+                    overflow: hidden;
+                    // opacity: 1;
+                    // display: block;
+
+                    &__title{
+                        @include techTitle;
+                        padding: 0 0 10px 0;
+                        // display: none;
+                    }
+                    &__text{
+                        text-overflow: hidden;
+                        // display: none;
+                        text-overflow:clip;
+                        position: relative;
+                        width: 300px;
+                        // opacity: 0;
+                        z-index: -1;
+                        @include techText;
+                        
+                        
+                    }
+                }
+            }
+            
+            .tech__content__768__item__sensorClick{
+                opacity: 1;
+                width:300px;
+                z-index: 10;
+            }
+            .tech__content__768__item__CONNECTIONClick{
+                opacity: 1;
+                width:220px;
+                z-index: 10;
+            }
+            .tech__content__768__item__BatterriesClick{
+                opacity: 1;
+                width:300px;
+                z-index: 10;
+                max-width: 300px;
+            }
+            .tech__content__768__item__sensor__textClick{
+                opacity: 1;
+                display: block;
+            }
+
+
+            
+        }
+    }
+}
+
+.tech__content__768__itemBatterries, .tech__content__768__itemconectionn, .tech__content__768__itemSensor,
+.tech__content__768__itemSensorClick1, .tech__content__768__itemconectionnClick1 ,.tech__content__768__itemBatterriesClick1 {
+    transition: .3s;
+}

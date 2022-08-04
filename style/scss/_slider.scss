@@ -1,0 +1,212 @@
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+    
+}
+
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{
+    
+    
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+    display: block;
+    background: none;
+    outline: none;
+    font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+
+
+
+color: #FFFFFF;
+border:none;
+    
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+    display: block;
+    background: none;
+    outline: none;
+    font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+border:none;
+
+
+
+color: #FFFFFF;
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{
+    display: flex;
+    font-size: 0;
+    justify-content: center;
+    padding: 0;
+    // padding-top: 32px;
+    // padding-bottom: 92px;
+    gap:10px;
+}
+.slick-dots li{
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #484848;
+    border-radius: 50%;
+}
+.slick-dots .slick-active{
+    background: #ABABAB;
+}
+/* Активная точка */
+.slick-dots li.slick-active{
+    
+}
+/* Элемент точки */
+.slick-dots li button{
+    display: none;
+}
+
+/* main_slider*/
+
+.sliderItem{
+    
+
+}
+.aboutSlider{
+    max-width: 898px;
+}
+.nav_dots{
+    // margin: 12px 0 0 138px;
+    display: none;
+}
+.nav_arrows{
+    position: relative;
+    display: inline-flex;
+    gap: 51.5px;
+    
+    // top: 466px;
+    // left: 275px;
+    padding: 0 0 10px 0;
+    margin: 18px 0 0 -192px;
+    bottom: 0;
+    transform: .3s;
+    &__bot{
+        display: block;
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: #212121;
+        border-radius: 1px;
+         
+        &__item{
+            border-radius: 1px;
+            width: 69px;
+            height: 2px;
+            background: #05C2DF;
+            transition: .3s;
+        }
+    }
+}
+.nav_arrows .slick-disabled{
+    color: #484848;
+}
+.flexColum__slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+@media screen and (max-width:1919px){
+    .about__top, .about__bot{
+        justify-content: center;
+    }
+    .about__top{
+        max-width: 1280px;
+        margin:0 auto ;
+    }
+    .nav_arrows{
+        
+        
+        margin: 18px 0 0 -102px;
+    }
+    .aboutTopItem1, .aboutTopItem2, .aboutTopItem3, .aboutTopItem4, .aboutTopItem5{
+        width: 100%;
+        
+    }
+    .aboutSlider{
+        max-width: 620px;
+        padding-left: 136px;
+    }
+   
+}
+
+@media screen and (max-width:1279px){
+    .aboutSlider{
+        padding: 0;
+    }
+    .nav_arrows{
+        
+        display: none;
+    }
+    .nav_dots{
+        margin-top: 15px;
+        display: flex;
+        
+    }
+    .flexColum__slider{
+        max-width: 340px;
+    }
+}
+
+@media screen and (max-width:767px){
+    
+    .about__top{
+        align-items: center;
+    }
+    .aboutSlider{
+        max-height: 1000px;
+        max-width: 320px;
+        overflow:visible;
+    }
+    .nav_dots{
+        justify-content: center;
+        
+    }
+}
+
+
+.swipeSwitchItem{
+    left: 166px;
+    width: 42px;
+}
+.swipeSwitchItemAbout{
+    margin-left: 114px;
+    width: 42px;
+}

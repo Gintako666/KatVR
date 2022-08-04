@@ -1,0 +1,30 @@
+@import url(../css/header.css);
+@import url(../css/nav.css);
+@import url(../css/navLeng.css);
+@import url(../css/video.css);
+@import url(../css/more.css);
+@import url(../css/about.css);
+@import url(../css/tech.css);
+@import url(../css/why.css);
+@import url(../css/getIn.css);
+@import url(../css/footer.css);
+@import url(../css/media.css);
+@import url(../css/slider.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1980px;
+  margin: 0 auto;
+  padding: 0 233px 0 234px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map */
