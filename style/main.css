@@ -299,7 +299,7 @@ div .header__nav__buttonMedia {
   z-index: 1;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  background: url("../../img/hrader.png") no-repeat;
+  background: url("../img/hrader.png") no-repeat;
 }
 .header__content__right__imgMedia {
   display: none;
@@ -1609,7 +1609,7 @@ html {
   .header__content__right__item {
     width: 810px;
     height: 688;
-    background: center/100% url("../../img/header1820.png") no-repeat;
+    background: center/100% url("../img/header1820.png") no-repeat;
   }
   .moreBg .container {
     padding: 0 110px 0 110px;
@@ -2046,7 +2046,7 @@ html {
   .header__content__right__item {
     width: 320px;
     height: 172px;
-    background: url("../../img/headerMedia.png") no-repeat;
+    background: url("../img/headerMedia.png") no-repeat;
     z-index: 1;
     background-size: cover;
     margin: 0 20vw;
